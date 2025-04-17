@@ -6,13 +6,13 @@
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 14:41:44 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/11 14:56:51 by mcardoso         ###   ########.fr       */
+/*   Updated: 2025/04/16 17:14:43 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t			i;
 	unsigned char	*tmp_s;

@@ -6,7 +6,7 @@
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 14:28:25 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/14 12:34:38 by mcardoso         ###   ########.fr       */
+/*   Updated: 2025/04/16 17:22:55 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t	i;
-	unsigned char *b_c;	
+	size_t			i;
+	unsigned char	*b_c;	
 
 	i = 0;
 	b_c = (unsigned char *)b;

@@ -6,7 +6,7 @@
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 17:08:08 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/04 17:14:00 by mcardoso         ###   ########.fr       */
+/*   Updated: 2025/04/16 17:16:33 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-
 
 /* int main(int argc, char **argv)
 {

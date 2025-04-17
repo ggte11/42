@@ -6,7 +6,7 @@
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 14:28:06 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/09 18:22:10 by mcardoso         ###   ########.fr       */
+/*   Updated: 2025/04/14 20:29:23 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strchr(const char *s, int c)
 /* int	main()
 {
 	char *s = "Hello World";
-	char c = 'W';
+	char c = '\0';
 	char *res = ft_strchr(s, c);
 	printf("%s\n", res);
 } */

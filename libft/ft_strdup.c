@@ -6,7 +6,7 @@
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 14:28:01 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/10 12:38:55 by mcardoso         ###   ########.fr       */
+/*   Updated: 2025/04/16 17:18:45 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strdup(const char *s1)
 
 	i = 0;
 	dest = malloc((ft_strlen(s1) + 1) * sizeof(char));
-	if(!dest)
+	if (!dest)
 		return (NULL);
 	while (s1[i] != '\0')
 	{

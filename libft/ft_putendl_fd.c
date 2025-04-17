@@ -6,7 +6,7 @@
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 11:38:13 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/07 11:51:48 by mcardoso         ###   ########.fr       */
+/*   Updated: 2025/04/16 17:17:05 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putendl_fd(char *s, int fd)
 {
 	int	i;
-	
+
 	i = 0;
 	while (s[i] != '\0')
 	{

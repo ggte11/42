@@ -6,7 +6,7 @@
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 14:28:12 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/08 16:17:55 by mcardoso         ###   ########.fr       */
+/*   Updated: 2025/04/16 17:19:47 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	while (src[i] != '\0' && (i < size - 1))
 	{
 		dest[destlen + 1] = src[i];
-		i++; 
+		i++;
 	}
 	dest[destlen + i] = src[i];
 	return (destlen + srclen);

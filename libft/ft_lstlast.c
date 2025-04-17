@@ -1,29 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/04 15:47:59 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/16 17:15:15 by mcardoso         ###   ########.fr       */
+/*   Created: 2025/04/17 13:17:38 by mcardoso          #+#    #+#             */
+/*   Updated: 2025/04/17 14:48:01 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+t_list	*ft_lstlast(t_list *lst)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')
-		|| (c >= '0' && c <= '9'))
-		return (1);
-	return (0);
+	t_list *temp;
+	if (!lst)
+		return (NULL);
+	temp = lst;
+	while (temp->next)
+		temp = temp->next;
+	return(temp);
 }
 
-/* int main(int argc, char **argv)
+/* int	main()
 {
-	if (argc < 2)
-		return (1);
-	printf("ft_isalnum(%c): %i\n", argv[1][0], ft_isalnum(argv[1][0]));
+	t_list *n1 = ft_lstnew("um");
+	t_list *n2 = ft_lstnew("dois");
+	t_list *n3 = ft_lstnew("tres");
+
+	n1->next = n2;
+	n2->next = n3;
+
+	t_list *last = ft_lstlast(n1);
+	printf("Ultimo node: %s\n", (char *)last->content);
+	free(n1);
+	free(n2);
+	free(n3);
 	return (0);
 } */

@@ -1,41 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 14:28:08 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/16 17:19:17 by mcardoso         ###   ########.fr       */
+/*   Created: 2025/04/16 19:52:20 by mcardoso          #+#    #+#             */
+/*   Updated: 2025/04/17 13:17:13 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+int	ft_lstsize(t_list *lst)
 {
-	unsigned int	i;
+	t_list	*tmp;
+	int	i;
 
+	tmp = lst;
 	i = 0;
-	if (!s || !f)
-		return (NULL);
-	while (s[i] != '\0')
+	while (tmp)
 	{
-		f(i, s + i);
+		tmp = tmp->next;
 		i++;
 	}
+	return (i);
 }
 
-/* void	upup(unsigned int i, char *c)
+/* int main()
 {
-	if(i % 2 == 0)
-		*c = ft_toupper(*c);
-}
+	t_list *list = NULL;
+	t_list *n1 = ft_lstnew("ONE");
+	t_list *n2 = ft_lstnew("Two");
+	t_list *n3 = ft_lstnew("Three");
+	t_list *n4 = ft_lstnew("Quatro");
 
-int	main()
-{
-	char s[] = "Hello World";
-	ft_striteri(s, upup);
-	printf("Result: %s\n", s);
+	n1->next = n2;
+	n2->next = n3;
+	n3->next = n4;
+	list = n1;
+	int	size = ft_lstsize(list);
+	printf("Tamanho da Lista:  %d\n", size);
+	free(n1);
+	free(n2);
+	free(n3);
+	free(n4);
 	return (0);
 } */

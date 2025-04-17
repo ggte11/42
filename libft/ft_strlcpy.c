@@ -6,7 +6,7 @@
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 14:28:15 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/08 15:19:50 by mcardoso         ###   ########.fr       */
+/*   Updated: 2025/04/16 17:19:58 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	srclen;
-	
+
 	i = 0;
 	srclen = 0;
 	if (!src)
@@ -37,9 +37,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	return (srclen);
 }
 
-/* #include <stdio.h>
-#include <stddef.h>
-int main()
+/* int main()
 {
 	char src[] = "Hello World!";
 	char dest[20];

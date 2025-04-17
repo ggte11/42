@@ -6,7 +6,7 @@
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 14:28:25 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/09 19:15:07 by mcardoso         ###   ########.fr       */
+/*   Updated: 2025/04/16 17:20:11 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char *last;
+	char	*last;
 
 	last = 0;
 	while (*s)

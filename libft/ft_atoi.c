@@ -6,7 +6,7 @@
 /*   By: mcardoso <mcardoso@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 15:47:56 by mcardoso          #+#    #+#             */
-/*   Updated: 2025/04/04 17:07:22 by mcardoso         ###   ########.fr       */
+/*   Updated: 2025/04/14 17:27:01 by mcardoso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,7 @@ int	ft_atoi(const char *str)
 	return (result * sign);
 }
 
-/*#include <stdio.h>
-int	main(void)
+/* int	main(void)
 {
 	printf("%d", ft_atoi("	 -1234ab567"));
-}*/
+} */
